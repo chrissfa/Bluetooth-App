@@ -1,0 +1,174 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'ios-deploy' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'ios-deploy', null ]
+7 verbose cache add spec ios-deploy
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'ios-deploy',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'ios-deploy',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed ios-deploy@*
+10 verbose addNamed "*" is a valid semver range for ios-deploy
+11 silly addNameRange { name: 'ios-deploy', range: '*', hasData: false }
+12 silly mapToRegistry name ios-deploy
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/ios-deploy
+16 verbose addNameRange registry:https://registry.npmjs.org/ios-deploy not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/ios-deploy
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 10:27:29 AM
+20 verbose request id f066e3ace4cd0bac
+21 verbose etag "33W06N958TKM5FZSWXU6YS6UE"
+22 http request GET https://registry.npmjs.org/ios-deploy
+23 http 304 https://registry.npmjs.org/ios-deploy
+24 verbose headers { date: 'Tue, 27 Oct 2015 10:27:29 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=60',
+24 verbose headers   etag: '"33W06N958TKM5FZSWXU6YS6UE"',
+24 verbose headers   age: '59',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-lcy1127-LCY',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '1',
+24 verbose headers   'x-timer': 'S1445941649.414544,VS0,VE0',
+24 verbose headers   vary: 'Accept' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Tue, 27 Oct 2015 10:27:29 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=60',
+25 silly get     etag: '"33W06N958TKM5FZSWXU6YS6UE"',
+25 silly get     age: '59',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-lcy1127-LCY',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '1',
+25 silly get     'x-timer': 'S1445941649.414544,VS0,VE0',
+25 silly get     vary: 'Accept' } ]
+26 verbose etag https://registry.npmjs.org/ios-deploy from cache
+27 verbose get saving ios-deploy to /Users/sttay/.npm/registry.npmjs.org/ios-deploy/.cache.json
+28 silly addNameRange number 2 { name: 'ios-deploy', range: '*', hasData: true }
+29 silly addNameRange versions [ 'ios-deploy',
+29 silly addNameRange   [ '1.0.1',
+29 silly addNameRange     '1.0.2',
+29 silly addNameRange     '1.0.3',
+29 silly addNameRange     '1.0.4',
+29 silly addNameRange     '1.0.5',
+29 silly addNameRange     '1.0.6',
+29 silly addNameRange     '1.0.7',
+29 silly addNameRange     '1.0.8',
+29 silly addNameRange     '1.0.9',
+29 silly addNameRange     '1.1.0',
+29 silly addNameRange     '1.2.0',
+29 silly addNameRange     '1.3.0',
+29 silly addNameRange     '1.3.1',
+29 silly addNameRange     '1.3.2',
+29 silly addNameRange     '1.4.0',
+29 silly addNameRange     '1.5.0',
+29 silly addNameRange     '1.6.0',
+29 silly addNameRange     '1.6.1',
+29 silly addNameRange     '1.6.2',
+29 silly addNameRange     '1.6.3',
+29 silly addNameRange     '1.7.0',
+29 silly addNameRange     '1.8.0',
+29 silly addNameRange     '1.8.1',
+29 silly addNameRange     '1.8.2' ] ]
+30 silly addNamed ios-deploy@1.8.2
+31 verbose addNamed "1.8.2" is a plain semver version for ios-deploy
+32 silly cache afterAdd ios-deploy@1.8.2
+33 verbose afterAdd /Users/sttay/.npm/ios-deploy/1.8.2/package/package.json not in flight; writing
+34 verbose afterAdd /Users/sttay/.npm/ios-deploy/1.8.2/package/package.json written
+35 silly install resolved [ { name: 'ios-deploy',
+35 silly install resolved     version: '1.8.2',
+35 silly install resolved     os: [ 'darwin' ],
+35 silly install resolved     description: 'launch iOS apps iOS devices from the command line (Xcode 7)',
+35 silly install resolved     main: 'ios-deploy',
+35 silly install resolved     scripts:
+35 silly install resolved      { preinstall: './src/check_reqs.js && xcodebuild',
+35 silly install resolved        test: 'npm run jshint',
+35 silly install resolved        jshint: 'node node_modules/jshint/bin/jshint src' },
+35 silly install resolved     bin: { 'ios-deploy': './build/Release/ios-deploy' },
+35 silly install resolved     repository:
+35 silly install resolved      { type: 'git',
+35 silly install resolved        url: 'git+https://github.com/phonegap/ios-deploy.git' },
+35 silly install resolved     devDependencies: { jshint: '2.5.8' },
+35 silly install resolved     keywords: [ 'ios-deploy', 'deploy to iOS device' ],
+35 silly install resolved     bugs: { url: 'https://github.com/phonegap/ios-deploy/issues' },
+35 silly install resolved     author: { name: 'Greg Hughes' },
+35 silly install resolved     license: 'GPLv3',
+35 silly install resolved     gitHead: '3ee31bc67790196a906b2de07bd46e6fedbe5c59',
+35 silly install resolved     homepage: 'https://github.com/phonegap/ios-deploy#readme',
+35 silly install resolved     _id: 'ios-deploy@1.8.2',
+35 silly install resolved     _shasum: '7c03fe975a818c40c8d87a075da5335797de2d5e',
+35 silly install resolved     _from: 'ios-deploy@*',
+35 silly install resolved     _npmVersion: '2.11.3',
+35 silly install resolved     _nodeVersion: '0.12.7',
+35 silly install resolved     _npmUser: { name: 'shazron', email: 'shazron@gmail.com' },
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: '7c03fe975a818c40c8d87a075da5335797de2d5e',
+35 silly install resolved        tarball: 'http://registry.npmjs.org/ios-deploy/-/ios-deploy-1.8.2.tgz' },
+35 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+35 silly install resolved     directories: {},
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/ios-deploy/-/ios-deploy-1.8.2.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install ios-deploy@1.8.2 into /usr/local/lib
+37 info installOne ios-deploy@1.8.2
+38 verbose installOne of ios-deploy to /usr/local/lib not in flight; installing
+39 verbose lock using /Users/sttay/.npm/_locks/ios-deploy-198957223cd98201.lock for /usr/local/lib/node_modules/ios-deploy
+40 silly install write writing ios-deploy 1.8.2 to /usr/local/lib/node_modules/ios-deploy
+41 verbose unbuild lib/node_modules/ios-deploy
+42 silly gentlyRm /usr/local/lib/node_modules/ios-deploy is being purged from base /usr/local
+43 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/ios-deploy
+44 verbose tar unpack /Users/sttay/.npm/ios-deploy/1.8.2/package.tgz
+45 verbose tar unpacking to /usr/local/lib/node_modules/ios-deploy
+46 silly gentlyRm /usr/local/lib/node_modules/ios-deploy is being purged
+47 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/ios-deploy
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 error tar.unpack untar error /Users/sttay/.npm/ios-deploy/1.8.2/package.tgz
+50 verbose unlock done using /Users/sttay/.npm/_locks/ios-deploy-198957223cd98201.lock for /usr/local/lib/node_modules/ios-deploy
+51 verbose fstream_path /usr/local/lib/node_modules/ios-deploy
+52 verbose fstream_type Directory
+53 verbose fstream_class DirWriter
+54 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/ios-deploy'
+54 verbose stack     at Error (native)
+55 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+55 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+55 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+56 verbose cwd /Users/sttay/ionic/myApp
+57 error Darwin 13.3.0
+58 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "ios-deploy"
+59 error node v4.2.1
+60 error npm  v2.14.7
+61 error path /usr/local/lib/node_modules/ios-deploy
+62 error code EACCES
+63 error errno -13
+64 error syscall mkdir
+65 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/ios-deploy'
+65 error     at Error (native)
+65 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/ios-deploy']
+65 error   errno: -13,
+65 error   code: 'EACCES',
+65 error   syscall: 'mkdir',
+65 error   path: '/usr/local/lib/node_modules/ios-deploy',
+65 error   fstream_type: 'Directory',
+65 error   fstream_path: '/usr/local/lib/node_modules/ios-deploy',
+65 error   fstream_class: 'DirWriter',
+65 error   fstream_stack:
+65 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+65 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+65 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+66 error Please try running this command again as root/Administrator.
+67 verbose exit [ -13, true ]
+68 verbose unbuild lib/node_modules/ios-deploy
+69 silly gentlyRm /usr/local/lib/node_modules/ios-deploy is being purged from base /usr/local
+70 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/ios-deploy
